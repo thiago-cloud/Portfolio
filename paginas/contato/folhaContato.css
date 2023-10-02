@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@100&display=swap');
+
+
+*{ 
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color:#707070;
+    font-family: 'Poppins';
+}
+
+body {
+    width:100vw;
+    height: 120vh;
+    background-color:#f7f7f7;
+}
+
+body.dark{
+    background-color:#232c35;
+}
+
+/*header*/
+
+header {
+    height: 15vh;
+    padding:20px;
+    padding-left:5px;
+    display: flex;
+    align-items:center;
+    margin-bottom:10vh;
+}
+
+header ul{
+    margin-left:830px;
+}
+
+header h1 {
+    color:#2410ce;
+    font-size:2.5rem;
+    margin-left: 20px;
+}
+
+
+header .navegacao-primaria {
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+header .navegacao-primaria li{
+    list-style-type: none;
+}
+header .navegacao-primaria li a{
+    text-decoration: none;
+    font-size: 16pt;
+    color:#3016ec;
+    font-weight: 500;
+}
+
+header .navegacao-primaria li a:hover{
+    text-decoration: none;
+    font-size: 16pt;
+    color:#f1c40f;
+}
+
+/*login*/
+
+.login{
+    margin-left:20px;
+    display: flex;
+}
+
+.login .user{
+    width: 180px;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 12pt;
+    height: 35px;
+    margin-right: .5vw;
+    border: 0.2px solid #707070;
+    
+}
+.login .senha{
+    width: 180px;
+    padding: 8px;
+    padding-right: 32px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 12pt;
+    height: 35px;
+    border: 0.2px solid #707070;
+}
+.login .btn-login{
+    cursor:pointer;
+    padding: 8px;
+    width:110px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #3016ec;
+    margin-left:1vw;
+    border: none;
+    color:azure;
+}
+
+.login .btn-login:hover{
+    background-color:#f1c40f;
+    color:azure;
+    
+}
+.cadastro{
+   position:absolute;
+   left:1748px;
+   margin:5px;
+}
+
+.cadastro a{
+    color:#3016ec;
+    margin-top:5px;
+    font-weight: 500;
+}
+
+.cadastro a:hover{
+    color:#f1c40f;
+    text-decoration: underline;
+}
+
+.login div{
+    position: relative;
+}
+
+.login div i{
+    cursor: pointer;
+    font-size: 20px;
+    right: 9%;/*Faz com que olho entre dentro do input*/
+    color:#999594d7;
+    display:flex;
+    position:absolute;
+    bottom:8px;
+    right: 4px;
+}
+
+/*Tema Claro Escuro*/
+
+.checkbox {
+    opacity:0; /*esconde o checkbox deixando totalmente transparente*/
+    position:absolute;
+    
+}
+
+.label{
+    background-color:#000;
+    border-radius: 50px;
+    cursor:pointer;
+    position: absolute;
+    left: 1445px;
+    top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+    height: 17px;
+    width:39px;
+
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top:2px;
+    left:2px;
+    height: 13px;
+    width:13px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform:translateX(21px)
+}
+
+.fa-moon{
+    margin-left: 5px;
+    color:#f1c40f;
+    font-size: 10px;
+}
+
+.fa-sun{
+    margin-right: 5px;
+    color:#f39c12;
+    font-size: 10px;
+}
+
+/*section*/
+
+.secao-contato{
+    width:100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secao-contato h2{
+    font-size: 25pt;
+    display: flex;
+    align-self: flex-start;
+    border-radius: 100%;
+    color:#fff;
+    margin-top: -10px;
+    margin-left: 78px;
+    margin-bottom:10px;
+}
+
+.container{
+    background-color: #00969e;
+    padding: 20px;
+    margin:10px;
+    height: 840px;
+    width: 710px;
+    display: block;
+    border-radius:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    opacity: 0.9;
+}
+
+.form-control i{
+    position: relative;
+    right: 58px;
+    visibility: hidden;
+    font-size: 20px;
+     
+}
+
+.form .form-control small{
+    color:#e74c3c;
+    font-size: 20px;
+    font-weight: 600;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
+
+
+form label{
+    font-size: 20px;
+    color:#fff;
+    margin-left: 42px;
+    
+}
+
+
+
+form input{
+    font-size: 20px;
+    border-radius:10px;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    margin-top: 10px;
+    border:none;
+    margin-bottom:10px;
+    margin-left: 42px;
+}
+
+
+
+form .msg textarea{
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left:42px;
+}
+
+form .btn-enviar{
+    border-radius: 10px;
+    width: 500px;
+    height: 50px;
+    cursor:pointer;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin:0px;
+    background-color: #3016ec;
+    border:none;
+    margin-left:42px;
+}
+
+form .btn-enviar:hover{
+    background-color: #f1c40f;
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+
+/*Error e Sucesso*/
+
+.form-control.success input{
+    border:2px solid #2ecc71;
+}
+
+.form-control.error input{
+    border: 2px solid #e74c3c;
+    
+}
+
+.form-control.success i.fa-circle-check{
+    color:#2ecc71;
+    visibility: visible;
+
+}
+
+.form-control.error i.fa-circle-exclamation{
+    color:#e74c3c;
+    visibility: visible;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color:#e74c3c
+}
+
+
+
+
+/*footer*/
+
+
+.titulo-footer{
+    color:azure;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 10vh;
+    margin-top:15vh;
+}
+
+.titulo-footer span{
+    color:#2410ce;
+}
+
+.sobre-info{
+    text-align: center;
+}
+
+.sobre-info ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sobre-info i{
+    padding: 10px;
+    font-size: 2rem;
+    cursor:pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:azure;
+}
+
+.reservados{
+    text-align: center;
+    padding:10px;
+}

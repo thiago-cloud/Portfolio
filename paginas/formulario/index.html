@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario | Cadastre-se </title>
+    <link rel="stylesheet" href="folhaFormulario.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div>
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk"><!--O for faz um link entre a label e o input no caso aki toda vez que aciono a label também aciono o input-->
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa-regular fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2>Criar Uma Conta</h2>
+        </div>
+        <section>
+            <form id="form" class="form">
+                <div class="form-control ">
+                    <label for="username">Nome de usuário</label>
+                    <input type="text" id="username" placeholder="Digite seu usuario"/>
+                    <i class="fa-solid fa-circle-exclamation"></i><!--icone de erro-->
+                    <i class="fa-solid fa-circle-check"></i><br><!--icone de sucesso-->
+                    <small>Mensagem de erro</small><!--Mensagem de erro-->
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Digite seu email"/>
+                    <i class="fa-solid fa-circle-exclamation"></i><!--icone de erro-->
+                    <i class="fa-solid fa-circle-check"></i><br><!--icone de sucesso-->
+                    <small>Mensagem de erro</small><!--Mensagem de erro-->
+                </div>
+                <div class="form-control">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha"/>
+                    <i class="fa-solid fa-circle-exclamation"></i><!--icone de erro-->
+                    <i class="fa-solid fa-circle-check"></i><br><!--icone de sucesso-->
+                    <small>Mensagem de erro</small><!--Mensagem de erro-->
+                </div>
+                <div class="form-control">
+                    <label for="password-confirmation">Confirmação de Senha</label>
+                    <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente"/>
+                    <i class="fa-solid fa-circle-exclamation"></i><!--icone de erro-->
+                    <i class="fa-solid fa-circle-check"></i><br><!--icone de sucesso-->
+                    <small>Mensagem de erro</small><!--Mensagem de erro-->
+                </div>
+                <button type="submit" class="btn-cadastrar">Cadastrar</button>
+                <a class="login" href="http://127.0.0.1:5500/">Já tem uma conta ?</a>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="titulo-footer">
+            <h1><span>Web</span>Developer</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo placeat dolor corrupti nobis quidem reiciendis quam quisquam fugiat nostrum temporibus maiores, magni suscipit dolores nulla. Est officia distinctio accusamus debitis!</p>
+        </div>
+        <div class="sobre-info">
+            <ul>
+                <li title="Github"><a href="https://github.com/thiago-cloud" target="_blank"><i style="color:#f05539;" class="fa-brands fa-github"></i></a></li>
+                <li title="Whatsapp"><a href="https://web.whatsapp.com/send?phone=5581987531748" target="_blank"><i style="color: #25D366" class="fa-brands fa-whatsapp"></i></a></li>
+                <li title="Email"><a href="mailto:thiago.al154@gmail.com" target="_blank"><i style="color:#DB4437" class="fa-regular fa-envelope"></i></a></li>
+                <li title="Linkedin"><a href="https://linkedin.com/in/thiago-alves-74927a241" target="_blank"><i style="color:#0E76A8;" class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <p class="reservados">Todos os direitos reservados - DEV Thiago © - 2023</p>
+    </footer>
+
+</body>
+</html>
