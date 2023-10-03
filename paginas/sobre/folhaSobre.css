@@ -26,6 +26,8 @@ header {
     padding-left:5px;
     display: flex;
     align-items:center;
+    height:125px;
+    width: 100vw;
 }
 
 header ul{
@@ -36,6 +38,10 @@ header h1 {
     color:#2410ce;
     font-size:2.5rem;
     margin-left: 20px;
+}
+header nav{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -104,11 +110,14 @@ header .navegacao-primaria li a:hover{
     color:azure;
     
 }
+
 .cadastro{
-   position:absolute;
-   left:1748px;
-   margin:5px;
-}
+    position:absolute;
+    left:1755px;
+    top:85px;
+    margin:5px;
+ }
+
 .cadastro a{
     color:#3016ec;
     margin-top:5px;
@@ -147,9 +156,8 @@ header .navegacao-primaria li a:hover{
     border-radius: 50px;
     cursor:pointer;
     position: absolute;
-    left: 1445px;
-    top: 10px;
-
+    top: 40px;
+    right:175px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -192,20 +200,19 @@ header .navegacao-primaria li a:hover{
 
 .secao-sobre{
     padding:50px;
-    height: 60vh;
+    height: 700px;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:20px;
-    text-align: center;
+    text-align: left;
     
 }
 
 .secao-sobre p span{
-    font-size: 25pt;
+    font-size: 2rem;
     font-weight: 700;
     display: inline-block;
-    margin-left: -800px;
 }
 
 .secao-sobre .image-sobre{
@@ -224,6 +231,7 @@ footer{
     margin-top:50px;
     padding-left: 30px;
     padding-right: 30px;
+    height:125px;
 }
 
 .titulo-footer{
@@ -234,6 +242,10 @@ footer{
 
 .titulo-footer span{
     color:#2410ce;
+}
+
+.titulo-footer h1{
+    font-size: 2rem;
 }
 
 .sobre-info{
@@ -253,53 +265,10 @@ footer{
     padding: 10px;
     font-size: 2rem;
     cursor:pointer;
-    margin-top: 5px;
-    margin-bottom: 15px;
     color:azure;
 }
 
 .reservados{
     text-align: center;
-    
-}footer{
-    margin-top:50px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.titulo-footer{
-    color:azure;
-    text-align: center;
-    padding: 20px;
-}
-
-.titulo-footer span{
-    color:#2410ce;
-}
-
-.sobre-info{
-    text-align: center;
-}
-
-.sobre-info ul{
-    display: flex;
-    justify-content: center;
-    gap:10px;
-}
-
-.sobre-info ul li {
-    list-style-type: none;
-  }
-
-.sobre-info i{
-    padding: 10px;
-    font-size: 2rem;
-    cursor:pointer;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    color:azure;
-}
-
-.reservados{
-    text-align: center;
+    padding:10px;
 }

@@ -200,6 +200,8 @@ footer{
     margin-top:50px;
     padding-left: 30px;
     padding-right: 30px;
+    height: 125px;
+    width: 100vw;
 }
 
 .titulo-footer{
@@ -229,14 +231,16 @@ footer{
     padding: 10px;
     font-size: 2rem;
     cursor:pointer;
-    margin-top: 5px;
-    margin-bottom: 15px;
     color:azure;
 }
 
 .reservados{
     text-align: center;
     
+}
+
+.sobre-footer h1{
+    font-size: 2rem;
 }
 
 /*Error e Sucesso*/
