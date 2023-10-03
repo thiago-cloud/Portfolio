@@ -34,6 +34,7 @@ main.dark{
 
 /*Desktop*/
 
+
 header {
     padding:20px;
     padding-left:5px;
@@ -63,18 +64,42 @@ header .navegacao-primaria {
     gap:20px;
     align-items: center;
 }
+
+/*Borda dinamica*/
 header .navegacao-primaria li a{
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 18pt;
     color:#3016ec;
     font-weight: 500;
+    position: relative;
 }
 
-header .navegacao-primaria li a:hover{
+/*Quando passar o mause a bordar aparecera*/
+/*Esse é o efeito do after*/
+nav .navegacao-primaria li a::after{
+    content: "";
+    width:0%;
+    height:2px;
+    background-color: #f1c40f;
+    position: absolute;
+    left:0;
+    bottom: 0;
+
+}
+
+header .navegacao-primaria li a:hover::after{
     text-decoration: none;
     font-size: 16pt;
     color:#f1c40f;
+    width: 100%;
 }
+
+
+
+
+
+
+
 
 
 /*login*/
@@ -125,7 +150,7 @@ header .navegacao-primaria li a:hover{
 
 .cadastro{
    position:absolute;
-   left:1755px;
+   left:1780px;
    top:85px;
    margin:5px;
 }

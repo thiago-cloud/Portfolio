@@ -42,6 +42,10 @@ header h1 {
     margin-left: 20px;
 }
 
+header nav{
+    display:flex;
+    align-items: center;
+}
 
 header .navegacao-primaria {
     display: flex;
@@ -51,23 +55,43 @@ header .navegacao-primaria {
 header .navegacao-primaria li{
     list-style-type: none;
 }
+
+/*Borda dinamica*/
+
 header .navegacao-primaria li a{
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 18pt;
     color:#3016ec;
     font-weight: 500;
+    position: relative;
 }
 
-header .navegacao-primaria li a:hover{
+/*Quando passar o mause a bordar aparecera*/
+/*Esse é o efeito do after*/
+nav .navegacao-primaria li a::after{
+    content: "";
+    width:0%;
+    height:2px;
+    background-color: #f1c40f;
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+
+header .navegacao-primaria li a:hover::after{
     text-decoration: none;
-    font-size: 16pt;
+    width:100%;
     color:#f1c40f;
 }
 
-header nav{
-    display:flex;
-    align-items: center;
-}
+
+
+
+
+
+
+
+
 
 /*login*/
 
@@ -118,7 +142,7 @@ header nav{
 
 .cadastro{
     position:absolute;
-    left:1755px;
+    left:1780px;
     top:85px;
     margin:5px;
  }
