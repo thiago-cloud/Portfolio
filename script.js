@@ -1,6 +1,5 @@
 
 
-
 function ativarLetra(e){
     const arrTexto = e.innerHTML.split('');//Faz a função de separação
     e.innerHTML ='';
@@ -15,28 +14,27 @@ const titulo = document.querySelector('.digitando');
 ativarLetra(titulo);
 
 //btn mobile
-/*
-const btn = document.getElementById('btn-menu')
+
 const menuMobile = document.getElementById('menu-mobile')
+const btn = document.getElementById('btn-menu')
 const clickFora = document.getElementById('menu-mobile')
 
 function animar(){
-    btn.classList.toggle('ativar'); 
+    btn.classList.toggle('ativar')
+    menuMobile.style.cssText = `visibility:visible`
 }
 
 clickFora.addEventListener("click", function(){
-    menuMobile.classList.add('esconder')
+    menuMobile.style.cssText = ` visibility:hidden;  `
+    /*menuMobile.classList.add('esconder')*/
+    btn.classList.toggle('ativar')
 })
-if(clickFora == true){
-    btn == false
-}else{
-    btn == true
-}
+
 
 
 btn.addEventListener('click',function(){
     menuMobile.classList.toggle('abrir')
-})*/
+})
 
 //Esconder senha
 
@@ -61,6 +59,13 @@ chk.addEventListener('click',() => {
     document.body.classList.toggle('dark')
 })
 
+//Tema claro Escuro Mobile
+
+const chkMobile = document.getElementById('chk-mobile')
+
+chkMobile.addEventListener('click',() => {
+    document.body.classList.toggle('dark')
+})
 
 
 
