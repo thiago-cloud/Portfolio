@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Login | Portifolio </title>
+    <link rel="stylesheet" href="folhaLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scriptLogin.js" defer></script>
 </head>
 <body>
+    <header>
+        <!--head Mobile-->
+        <div class="head-mobile">
+            <a href="index.html"><h1>Dev<span>Thiago</span></h1> </a>
+            <button onclick="animar()" class="btn-menu" id="btn-menu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
+            <div class="claroEscuro">
+                <input type="checkbox" class="checkbox-mobile" id="chk-mobile">
+                <label class="label" for="chk-mobile"><!--O for faz um link entre a label e o input no caso aki toda vez que aciono a label também aciono o input-->
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            <a href=" https://thiago-cloud.github.io/Portifolio/">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="#">Login</a>        
+        </div>  
+    </header>
     
+    <section class="secao-contato">
+        <div class="container">
+        <h2>Login</h2>
+            <form action="www.google.com" method="post" id="form" class="form">
+                <div class="usuario form-control" >
+                    <label>Usuario</label><br>
+                    <input type="text" name="usuario" id="usuario" placeholder="Digite seu usuario" autocomplete="off">
+                </div> 
+                <div class="senha form-control" >
+                    <label>Senha</label><br>
+                    <input type="password" class="senha" nome="senha" id="senha" placeholder="Digite sua senha">
+                    <i class="fa-solid fa-eye" id="btn-senha" onclick="alternar()"></i>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <div><a href="/Portifolio/paginas/formulario/index.html" class="cadastrar-mobile">Cadastrar-se</a></div>
+            </form>
+        
+    </section>
+    </div>
+    
+    <footer>
+        <div class="titulo-footer">
+            <h1><span>Web</span>Developer</h1>
+            <p>Cadastre-se no nosso site e fique por dentro de tudo que acontece no mundo da tecnologia além de ter acesso a diversos outros projetos que são publicados</p>
+        </div>
+        <div class="sobre-info">
+            <ul>
+                <li title="Github"><a href="https://github.com/thiago-cloud"><i style="color:#f05539;" class="fa-brands fa-github"></i></a></li>
+                <li title="Whatsapp"><a href="https://web.whatsapp.com/send?phone=5581987531748" target="_blank"><i style="color: #25D366" class="fa-brands fa-whatsapp"></i></a></li>
+                <li title="Email"><a href="mailto:thiago.al154@gmail.com"><i style="color:#DB4437" class="fa-regular fa-envelope"></i></a></li>
+                <li title="Linkedin"><a href="https://linkedin.com/in/thiago-alves-74927a241"><i style="color:#0E76A8;" class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <p class="reservados">Todos os direitos reservados - DEV Thiago © - 2023</p>
+    </footer>
     
 </body>
 </html>
