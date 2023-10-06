@@ -16,6 +16,7 @@ body {
     height: 120vh;
     background-color:#f7f7f7;
     transition: background 0.2s linear;
+    display: none;
 }
 
 body.dark{
@@ -23,6 +24,10 @@ body.dark{
 }
 
 @media(max-width:390px) and (max-height:915px){
+
+body{
+    display: block;
+}
 
 /*header*/
 
@@ -175,10 +180,6 @@ form .btn-enviar{
     border:none;
     position: relative;
     top:5vh;
-}
-
-form div .cadastrar-mobile{
-
 }
 
 form .cadastrar-mobile{
@@ -430,4 +431,80 @@ footer{
     .label{
         top:-4vh;
     }
+}
+
+@media(width:360px) and (height:640px){
+
+    .head-mobile{
+        height:14vh;
+    }
+
+    .label{
+        top:-4vh;
+    }
+    
+    .sobre-info ul{
+        margin-top: 20vh;
+    }
+}
+
+@media(width:360px) and (height:760px){
+    
+    .titulo-footer{
+        height:26vh;
+    }
+}
+
+@media(width:320px) and (height:568px){
+    
+    .head-mobile{
+        height:16vh;
+
+    }
+
+    header {
+        margin-bottom: 10vh;
+    }
+
+    .container{
+        height:85vh;
+    }
+
+    form .cadastrar-mobile{
+        left:20vw;
+    }
+
+    .form-control{
+        height:18vh;
+    }
+
+    .label {
+        height:15px;
+        top:-4vh;
+        left:242px;
+    }
+
+    header h1{
+        left:17vw;
+        top:4vh;
+    }
+
+    .head-mobile .btn-menu {
+        height:7vh;
+    }
+
+    .secao-contato {
+        margin-bottom:12vh;
+    }
+    
+    .titulo-footer{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .sobre-info ul {
+        margin-top: 30vh;
+    }
+
+
 }

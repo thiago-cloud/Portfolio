@@ -138,6 +138,7 @@ body.dark{
     margin:20px;
     font-size: 20px;
     font-weight: 700;
+    margin-top:6vh;
 }
 
 .btn-cadastrar:hover{
@@ -313,7 +314,7 @@ footer{
 
     .form-control i{
         position:relative;
-        top: -40px;
+        top: -34px;
         right: -34vw;
         font-size: 18px;
     }
@@ -337,6 +338,70 @@ footer{
     .sobre-info ul{
         margin-top: 7vh;
         margin-bottom: 1vh;
+    }
+}
+
+@media(width:384px) and (height:854px){
+    .btn-cadastrar{
+        margin-top: 4vh;
+    }
+
+    .form-control i{
+        top:-40px;
+    }
+}
+
+@media(width:375px) and (height:667px){
+
+    .container{
+        height:100vh;
+    }
+
+    .label{
+        top:14vh;
+    }
+    
+    .btn-cadastrar{
+        margin-top:8vh;
+    }
+}
+
+@media(width:375px) and (height:812px){
+    body{
+        height:119vh;
+    }
+}
+
+@media(width:360px) and (height:640px){
+    
+    body{
+        height: 140vh;
+    }
+    
+    .form-control{
+        height: 16vh;
+    }
+    .container{
+        height: 110vh;
+    }
+}
+
+@media(width:320px) and (height:568px){
+
+    body{
+        height:152vh;
+    }
+
+    .container{
+        height: 118vh;
+    }
+
+    .form-control{
+        height:100px;
+    }
+    
+    .container .header h2{
+        font-size: 20pt;
     }
 
 }
