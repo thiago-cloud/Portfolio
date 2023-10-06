@@ -26,8 +26,6 @@ body.dark{
     background-color: #232c35;
 }
 
-
-
 /*Formulario*/
 .container{
     width: 710px;
@@ -117,7 +115,6 @@ body.dark{
     color:#fff;
     width: 300px;
     height: 40px;
-    
 }
 
 .btn-cadastrar{
@@ -140,14 +137,11 @@ body.dark{
     transition: 0.5s;
 }
 
-
-
 /*Tema Claro Escuro*/
 
 .checkbox {
     opacity:0; /*esconde o checkbox deixando totalmente transparente*/
     position:absolute;
-    
 }
 
 .label{
@@ -162,7 +156,6 @@ body.dark{
     position:relative;
     height: 17px;
     width:39px;
-
     transform: scale(1.5);
 }
 
@@ -193,7 +186,6 @@ body.dark{
     color:#f39c12;
     font-size: 10px;
 }
-
 
 /*Footer*/
 
@@ -270,3 +262,69 @@ footer{
     visibility: visible;
     color:#e74c3c
 }
+
+/*Mobile SE*/
+
+@media(max-width:390px) and (max-height:915px){
+
+    .container{
+        width:90vw;
+        height: 95vh;
+        border-radius: 5px;
+    }
+
+    .container .header h2{
+        margin-left: 4vw;
+        margin-bottom:10px;
+    }
+
+    .btn-cadastrar{
+        width: 81vw;
+        height: 7vh;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .container input{
+        width: 81vw;
+        height: 7vh;
+        border-radius: 5px;
+        margin-left:0px;
+    }
+
+    .form-control{
+        height: 13vh;
+    }
+
+    .form-control label{
+        font-size: 18px;
+        margin-left: 8px;
+        margin-bottom:4px;
+    }
+
+    .form-control i{
+        position:relative;
+        top: -40px;
+        right: -34vw;
+        font-size: 18px;
+    }
+
+    .form-control.error small{
+        font-size: 16px;
+        position: relative;
+        top: -3vh;
+    }
+    .login{
+        font-size: 18px;
+    }
+    /*Footer*/
+
+    .sobre-info ul{
+        margin-top: 7vh;
+        margin-bottom: 1vh;
+    }
+
+}
+
+
+

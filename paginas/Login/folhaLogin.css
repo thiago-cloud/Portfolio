@@ -146,7 +146,7 @@ header h1 {
 }
 
 form label{
-    font-size: 20px;
+    font-size: 18px;
     color:#fff;
 }
 
@@ -168,7 +168,7 @@ form .btn-enviar{
     height: 7vh;
     cursor:pointer;
     color:#fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     margin:0px;
     background-color: #3016ec;
@@ -186,16 +186,7 @@ form .cadastrar-mobile{
     color:#111;
     position:relative;
     top:8vh;
-}
-
-form .cadastrar-mobile:hover{
-    color:#f1c40f;
-    text-decoration:underline;
-}
-
-form .btn-enviar:hover{
-    background-color: #f1c40f;
-    transition: .5s;
+    left:25vw;
 }
 
 .form-control{
