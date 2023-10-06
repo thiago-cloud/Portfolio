@@ -89,6 +89,13 @@ function setSuccessFor(input){
 //Checar se o email e valido Regex
 function checkEmail(email){
     return /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i.test(email)
-    
-    
 }
+
+/*Modal*/
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

@@ -51,13 +51,18 @@ header nav{
 }
 
 header ul{
-    margin-left:830px;
+    margin-left:42vw;
 }
 
 header h1 {
     color:#2410ce;
     font-size:2.5rem;
     margin-left: 20px;
+    margin-right:20px;
+}
+
+.titulo-mobile{
+    display: none;
 }
 
 header .navegacao-primaria {
@@ -144,7 +149,7 @@ header .navegacao-primaria li a:hover::after{
 
 .cadastro{
    position:absolute;
-   left:1780px;
+   left:92.5vw;
    top:85px;
    margin:5px;
 }
@@ -222,12 +227,12 @@ header .navegacao-primaria li a:hover::after{
     background-color:#000;
     border-radius: 50px;
     cursor:pointer;
-    top: 40px;
-    right:175px;
+    top: 94px;
+    left:89vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position:relative;
+    position:absolute;
     height: 17px;
     width:39px;
     transform: scale(1.5);
@@ -525,6 +530,10 @@ footer{
 
     header .navegacao-primaria{
         display: none;   
+    }
+    
+    .titulo-mobile{
+        display: block;
     }
 
     .cadastro{
