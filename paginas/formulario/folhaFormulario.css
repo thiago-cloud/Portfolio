@@ -71,14 +71,23 @@ body.dark{
 .login{
     text-decoration: none;
     color:#000;
-    font-size:20px;
-    
+    font-size:20px;    
 }
+
 .login:hover{
     font-weight: 500;
     color:#f1c40f;
     text-decoration: underline;
 }
+
+.login-mobile{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    display:none;
+}
+
+
 
 .form-control label{
     color:#fff;
@@ -314,9 +323,15 @@ footer{
         position: relative;
         top: -3vh;
     }
+
     .login{
-        font-size: 18px;
+        display:none;
     }
+
+    .login-mobile{
+        display: block;
+    }
+
     /*Footer*/
 
     .sobre-info ul{
