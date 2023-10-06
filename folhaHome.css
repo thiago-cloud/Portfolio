@@ -651,13 +651,13 @@ footer{
         color:#2410ce;
         font-size: 1.9rem;
         left: 21vw;
-        top:3vh;
+        top:4vh;
         position: absolute;
     }
 
     .head-mobile{
         width: 100vw;
-        height:12vh;
+        height:14vh;
         position: fixed;
         z-index: 999;
         padding: 20px;
@@ -677,7 +677,7 @@ footer{
         background-color:#fff;
         visibility: visible;
         position:relative;
-        top:1vh;
+        top:1.5vh;
         
     }
 
@@ -741,7 +741,7 @@ footer{
         cursor:pointer;
         position: relative;
         left:277px;
-        top: -3vh;
+        top: 2.5vh;
         height: 17px;
         width:40px;
         transform: scale(1.5);
