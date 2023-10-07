@@ -30,8 +30,6 @@ clickFora.addEventListener("click", function(){
     btn.classList.toggle('ativar')
 })
 
-
-
 btn.addEventListener('click',function(){
     menuMobile.classList.toggle('abrir')
 })
