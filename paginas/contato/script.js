@@ -21,6 +21,34 @@ chk.addEventListener('click',() => {
     document.body.classList.toggle('dark')
 })
 
+//Tema claro Escuro Mobile
+
+const chkMobile = document.getElementById('chk-mobile')
+
+chkMobile.addEventListener('click',() => {
+    document.body.classList.toggle('dark')
+})
+
+//btn mobile
+
+const menuMobile = document.getElementById('menu-mobile')
+const btn = document.getElementById('btn-menu')
+const clickFora = document.getElementById('menu-mobile')
+
+function animar(){
+    btn.classList.toggle('ativar')
+    menuMobile.style.cssText = `visibility:visible`
+}
+
+clickFora.addEventListener("click", function(){
+    menuMobile.style.cssText = ` visibility:hidden;  `
+    /*menuMobile.classList.add('esconder')*/
+    btn.classList.toggle('ativar')
+})
+
+btn.addEventListener('click',function(){
+    menuMobile.classList.toggle('abrir')
+})
 
 //Validação do formulario contato
 

@@ -21,6 +21,14 @@ body {
     transition: background 0.2s linear;
 }
 
+.titulo-mobile{
+    display: none;
+}
+
+.claroEscuro{
+    display: none;
+}
+
 body.dark{
     background-color:#232c35;
 }
@@ -37,7 +45,7 @@ header {
 }
 
 header ul{
-    margin-left:42vw;
+    margin-left:52vw;
 }
 
 header h1 {
@@ -138,7 +146,7 @@ header .navegacao-primaria li a:hover::after{
 
 .cadastro{
     position:absolute;
-    left: 92.5vw;
+    left: 92.7vw;
     top:85px;
     margin:5px;
  }
@@ -171,18 +179,22 @@ header .navegacao-primaria li a:hover::after{
 
 /*Tema Claro Escuro*/
 
+.claroEscuro{
+    display: none;
+}
+
 .checkbox {
     opacity:0; /*esconde o checkbox deixando totalmente transparente*/
     position:absolute;
+    
 }
 
 .label{
     background-color:#000;
     border-radius: 50px;
     cursor:pointer;
-    position: absolute;
     top: 94px;
-    left: 89vw;
+    left:90vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -218,6 +230,39 @@ header .navegacao-primaria li a:hover::after{
     margin-right: 5px;
     color:#f39c12;
     font-size: 10px;
+}
+
+
+
+.menu-mobile{
+    background-color:#0000008c;
+    position:absolute;
+    top:82px;
+    left:0px;
+    width:100%;
+    height:0vh;
+    backdrop-filter: blur(10px);/*Dar o efeito de vidro ou seja um desfoque*/
+    visibility: hidden;
+    overflow: hidden; /*Esconde o menu de forma proporcional*/
+    transition: 0.5s;
+}
+
+.menu-mobile a{
+    color:azure;
+    text-decoration: none;
+    display:block;
+    padding:20px 20px;
+    font-size: 18pt;
+}
+
+.menu-mobile a:hover{
+    background-color: #000!important;
+    
+}
+
+.head-mobile .btn-menu{
+    visibility: hidden;
+    /*display: none;*/
 }
 
 /*section*/
@@ -282,7 +327,7 @@ form label{
 
 form input{
     font-size: 20px;
-    border-radius:10px;
+    border-radius:5px;
     width: 500px;
     height: 50px;
     padding: 10px;
@@ -294,7 +339,7 @@ form input{
 }
 
 form .msg textarea{
-    border-radius: 10px;
+    border-radius: 5px;
     width: 500px;
     height: 300px;
     padding: 10px;
@@ -306,7 +351,7 @@ form .msg textarea{
 }
 
 form .btn-enviar{
-    border-radius: 10px;
+    border-radius: 5px;
     width: 500px;
     height: 50px;
     cursor:pointer;
@@ -393,4 +438,530 @@ footer{
 .reservados{
     text-align: center;
     padding:10px;
+}
+
+
+@media(max-width:390px) and (max-height:915px){
+
+    header nav{
+        display: none;
+    }
+
+    header .navegacao-primaria{
+        display:none;
+    }
+
+    header .titulo-desktop{
+        display:none;
+    }
+
+    header{
+        padding:0px;
+        height:180px;
+    }
+
+    .titulo-mobile{
+        display:block;
+    }
+
+    .secao-contato{
+        height:120vh;
+    }
+
+    .container{
+        margin-top: 0px;
+        height:120vh;
+        width:90vw;
+        border-radius:5px;
+    }
+
+    .secao-contato h2{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        bottom: 24vh;
+        
+    }
+
+    .form-control{
+        height:16vh;
+         position: relative;
+        top: -20vh;
+    }
+
+    .form-control i{
+        top: -4vh;
+        left: 65vw;
+    }
+
+    .form-control.error small{
+        font-size:18px;
+        position: relative;
+        top: -2vh;
+    }
+
+    form label{
+        font-size:18px;
+        margin-left:7px;
+    }
+
+    form input{
+        height:6vh;
+        width:78vw;
+        font-size: 18px;
+        margin-bottom: 0px;
+        margin-left: 4px;
+    }
+    
+    form .btn-enviar:hover {
+        background-color: #f1c40f;
+        transform: scale(1);
+        transition: .5s;
+    }
+
+
+    form #msg{
+        width:80vw;
+        height:45vh;
+        font-size: 18px;
+        margin-left: 0px;
+    }
+
+    form .msg label{
+        margin-right:-11vw;
+    }
+
+    form .btn-enviar{
+        height:6vh;
+        width:80vw;
+        margin-left: 0px;
+        font-size: 18px;
+        position: relative;
+        top: 20vh;
+    }
+
+/*Tema claro Escuro Mobile*/
+
+.claroEscuro{
+    display: inline-block;
+}
+
+.checkbox-mobile {
+    opacity:0; /*esconde o checkbox deixando totalmente transparente*/
+    position:absolute;
+}
+
+.label{
+    background-color:#232c35;
+    border-radius: 50px;
+    cursor:pointer;
+    position: relative;
+    left:250px;
+    top: 0vh;
+    height: 17px;
+    width:40px;
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top:2px;
+    left:2px;
+    height: 13px;
+    width:13px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox-mobile:checked + .label .ball{
+    transform:translateX(21px)
+}
+
+.fa-moon{
+    margin-left: 5px;
+    color:#f1c40f;
+    font-size: 10px;
+}
+
+.fa-sun{
+    margin-right: 5px;
+    color:#f39c12;
+    font-size: 10px;
+}
+
+
+    .titulo-footer{
+        margin-top:20vh;
+    }
+
+    .sobre-info ul {
+        margin-top:20vh;
+    }
+
+     /*Btn Mobile*/
+
+     header nav{
+        display: none;
+    }
+
+
+    header h1 {
+        color:#2410ce;
+        font-size: 1.9rem;
+        left: 21vw;
+        top:4vh;
+        position: absolute;
+    }
+
+    .head-mobile{
+        width: 100vw;
+        height:12vh;
+        position: fixed;
+        z-index: 999;
+        padding: 20px;
+        display: block;
+        background-color: #000;
+        position: fixed;
+        top:-1vh;
+    }
+    
+
+    .head-mobile .btn-menu {
+        width:12vw;
+        height:6vh;
+        border: 2px solid #fff;
+        cursor:pointer;
+        border-radius: 5px;
+        background-color:#fff;
+        visibility: visible;
+        position:relative;
+        top:1vh;
+        
+    }
+
+    .linha{
+        width:80%;
+        height:5px;
+        background-color: #ccc;
+        display: block;
+        position:relative;
+        margin:5px auto;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .btn-menu.ativar{
+        border:1px solid red;
+    }
+
+    button.ativar .linha:nth-child(1){
+        transform: translateY(10px) rotate(-45deg);
+        background-color: red;
+    }
+
+    button.ativar .linha:nth-child(2){
+        width: 0;
+    }
+    
+    button.ativar .linha:nth-child(3){
+        transform: translateY(-10px) rotate(45deg);
+        background-color: red;
+    }
+
+    .menu-mobile.abrir{
+        visibility: visible;
+        height: calc(250vh - 10vh);
+        position: fixed;
+        z-index: 999;
+    }
+
+    .menu-mobile.esconder{
+        visibility: hidden;
+        height: calc(250vh - 10vh);
+        position: fixed;
+        z-index: 999;
+    }
+    
+}
+
+@media(width:360px) and (height:760px){
+    
+    .head-mobile .btn-menu{
+        top:0.5vh;
+    }
+
+    header h1{
+        top:3.5vh;
+    }
+
+    .container{
+        height:125vh;
+    }
+
+    .label{
+        top:-1vh;
+        left: 225px;
+    }
+
+    .sobre-info ul {
+        margin-top:28vh;
+    }
+
+    .titulo-footer{
+        margin-top:16vh;
+    }
+
+    .form-control{
+        margin-bottom: 8px;
+    }
+
+    .form-control.error small {
+        top: -3vh;
+        text-align: center;
+      }
+}
+
+@media(width:360px) and (height:800px){
+
+    .label{
+        left:225px;
+    }
+
+    .form-control.error small{
+        text-align: center;
+    }
+
+    .form-control{
+        margin-bottom:15px;
+    }
+
+    .container {
+        height:125vh;
+    }
+
+    .titulo-footer {
+        margin-top:16vh;
+    }
+
+    .sobre-info ul {
+        margin-top: 27vh;
+      }
+
+}
+
+@media(width:384px) and (height:854px){
+    
+    .form-control{
+        margin-bottom: 10px;
+    }
+
+    .form-control.error small {
+        text-align: center;
+    }
+
+    .container {
+        height:125vh;
+    }
+
+    .titulo-footer {
+        margin-top: 16vh;
+      }
+}
+
+@media(width:360px) and (height:640px){
+
+    .head-mobile{
+        height:14vh;
+    }
+
+    .label{
+        left:225px;
+    }
+
+    .secao-contato {
+        height: 140vh;
+    }
+
+    .sobre-info ul {
+        margin-top: 35vh;
+    }
+
+    .container{
+        height:125vh;
+    }
+
+    .form-control{
+        margin-bottom:18px;
+    }
+
+    .form-control i {
+        top: -4.5vh;
+    }
+
+    .form-control.error small{
+        text-align: center;
+        position: relative;
+        top: -25px;
+    }
+
+    .titulo-footer {
+        margin-top: 12vh;
+      }
+}
+
+@media(width:375px) and (height:812px){
+    
+    header{
+        height:190px;
+    }
+
+    .head-mobile{
+        height: 11.2vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:0.5vh;
+    }
+
+    .label{
+        left: 240px;
+    }
+
+    .form-control.error small{
+        text-align:center;
+        top:-3vh;
+    }
+
+    .form-control{
+        margin-bottom:6px;
+    }
+
+    .container{
+        height: 125vh;
+    }
+}
+
+@media(width:390px) and (height:844px){
+    
+    .head-mobile{
+        height: 10.8vh;
+    }
+
+    .head-mobile .btn-menu{
+        top: 0.5vh;
+    }
+
+    header h1{
+        top: 3vh;
+    }
+
+    .label{
+        top: -1vh;
+    }
+
+    .secao-contato {
+        height: 125vh;
+        margin-bottom: -45px;
+    }
+
+}
+
+@media(width:375px) and (height:812px){
+    
+    header h1{
+        top:3vh;
+    }
+
+    .label{
+        top:-1vh;
+    }
+    .container{
+        margin-bottom: -25px;
+    }
+
+}
+
+@media(width:320px) and (height:568px){
+    
+    .head-mobile{
+        height:15.5vh;
+    }
+
+    .head-mobile .btn-menu{
+        height: 7vh;
+    }
+    .label{
+        left:197px;
+        top: -1vh;
+    }
+
+    header h1{
+        left:17vw;
+    }
+
+    .form-control i{
+        top:-5vh;
+        font-size: 18px;
+    }
+
+    .sobre-info ul {
+        margin-top: 45vh;
+      }
+
+    .form-control{
+        margin-bottom: 25px;
+    }
+
+    .form-control.error small{
+        text-align: center;
+        position: relative;
+        top: -5vh;
+    }
+
+    .container {
+        height:135vh;
+    }
+    
+}
+
+@media(width:375px) and (height: 667px){
+
+    .head-mobile {
+        height:13.3vh;
+    }
+
+    .label{
+        top:-1vh;
+    }
+    .container{
+        height:125vh;
+    }
+
+    .form-control.error small {
+        text-align: center;
+        position: relative;
+        top: -4vh;
+    }
+
+    .form-control {
+        
+        margin-bottom: 2vh;
+    }
+
+    .form-control i {
+        top: -4.6vh;
+        left: 66vw;
+    }
+
+    .sobre-info ul{
+        margin-top:28vh;
+    }
+
+    .secao-contato {
+        height: 114vh;
+    }
+
 }
