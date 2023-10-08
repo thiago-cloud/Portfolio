@@ -100,7 +100,7 @@ header h1 {
 
 .secao-contato{
     width:100vw;
-    height: 80vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +120,7 @@ header h1 {
 .container{
     background-color: #00969e;
     padding: 20px;
-    height: 65vh;
+    height: 73vh;
     width: 90vw;
     display: block;
     border-radius:5px;
@@ -191,7 +191,7 @@ form .cadastrar-mobile{
 }
 
 .form-control{
-    height: 13vh;
+    height: 17vh;
 }
 
 
@@ -207,7 +207,7 @@ header h1 {
 
 .head-mobile{
     width: 100vw;
-    height:12vh;
+    height:10.8vh;
     position: fixed;
     z-index: 999;
     padding: 20px;
@@ -227,7 +227,7 @@ header h1 {
     background-color:#fff;
     visibility: visible;
     position:relative;
-    top:1vh;
+    top:0.5vh;
     
 }
 
@@ -402,7 +402,7 @@ footer{
 .sobre-info ul{
     display: flex;
     justify-content: center;
-    margin-top:7vh;
+    margin-top:10vh;
     margin-bottom: 1vh;
     
 }
@@ -417,22 +417,49 @@ footer{
 .reservados{
     text-align: center;
     padding:2px;
+    }
 }
 
+@media(width:375px) and (height:812px){
+    
+    .head-mobile{
+        height:11.1vh;
+    }
+
+    .titulo-footer{
+        height:22vh;
+    }
 }
 
 @media(width:375px) and (height:667px){
+    
     .head-mobile{
-        height:14vh;
+        height:13.3vh;
+    }
+
+    .secao-contato{
+        height:80vh;
     }
 
     .sobre-info ul{
-        margin-top:12vh;
+        margin-top:20vh;
     }
+
+    header {
+        height: 180px;
+      }
 
     .label{
         top:-4vh;
     }
+
+    .head-mobile .btn-menu{
+        top:1vh;
+    }
+    .titulo-footer{
+        margin-top: 15vh;
+    }
+
 }
 
 @media(width:360px) and (height:640px){
@@ -456,6 +483,19 @@ footer{
         height:26vh;
     }
 }
+
+@media(width:360px) and (height:800px){
+
+    .sobre-info ul{
+        margin-top:15vh;
+    }
+
+    .head-mobile{
+        height:11.3vh;
+    }
+}  
+    
+
 
 @media(width:320px) and (height:568px){
     
@@ -496,6 +536,7 @@ footer{
 
     .head-mobile .btn-menu {
         height:7vh;
+        top:1vh;
     }
 
     .secao-contato {
