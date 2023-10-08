@@ -520,7 +520,7 @@ footer{
 
 /*mobile SE*/
 
-@media(max-width:390px) and (max-height:915px){
+@media(max-width:428px) and (max-height:926px){
     
     header{
         width: 100vw;
@@ -942,6 +942,135 @@ footer{
     .label{
         left:238px;
         top:-4.5vh;
+    }
+
+}
+
+/*Responsividade Mobile Pro (Telas mobiles grandes)*/
+
+@media(width:412px) and (height:915px){
+    
+    .head-mobile{
+        height: 10vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:0.3vh;
+    }
+
+    header h1{
+        top:3vh;
+        left: 25vw;
+    }
+
+    .label{
+        top:-27.5px;
+        left:325px;
+    }
+
+    .titulo-footer{
+        margin-bottom:7vh;
+    }
+}
+
+@media(width:412px) and (height:883px){
+    
+    .head-mobile{
+        height:10.3vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:0.3vh;
+    }
+
+    header h1{
+        top:3vh;
+        left:25vw;
+    }
+
+    .label{
+        top:-3.2vh;
+        left: 325px;
+    }
+
+    .titulo-footer {
+        margin-bottom: 7vh;
+    }
+
+}
+
+@media(width:414px) and (height:896px){
+    
+    .head-mobile{
+        height:10.2vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:0.5vh;
+    }
+
+    header h1{
+        left: 25vw;
+        top: 3vh;
+    }
+
+    .label{
+        left: 325px;
+        top: -3.2vh;
+    }
+
+    .titulo-footer{
+        margin-bottom:7vh;
+    }
+}
+
+@media(width:428px) and (height:926px){
+
+    .head-mobile{
+        height:9.9vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:0.3vh;
+    }
+
+    header h1{
+        left:25vw;
+        top: 6.6vw;
+    }
+
+    .label{
+        left: 340px;
+        top: -3.5vh;
+    }
+
+    .titulo-footer{
+        margin-bottom:7vh;
+    }
+}
+
+@media(width:412px) and (height:914px){
+    
+    .head-mobile {
+        height:10vh;
+    }
+
+    .head-mobile .btn-menu{
+        top: 0.3vh;
+    }
+
+    header h1{
+        top:3vh;
+        left: 25vw;
+    }
+
+    .label{
+        top:-3.5vh;
+        left: 325px;
+    }
+
+    .titulo-footer {
+        margin-bottom:7vh;
     }
 
 }
