@@ -626,6 +626,7 @@ footer{
         background-color: #000;
         position: fixed;
         top:-1vh;
+        box-shadow: 1px 3px 40px #3016ec;
     }
     
 

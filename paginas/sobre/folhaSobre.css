@@ -408,6 +408,7 @@ footer{
         visibility: visible;
         position:relative;
         top:1.5vh;
+        box-shadow: 1px 3px 40px #3016ec;
         
     }
 

@@ -665,6 +665,7 @@ footer{
         background-color: #000;
         position: fixed;
         top:-1vh;
+        box-shadow: 1px 3px 40px #3016ec;
     }
     
 
@@ -781,7 +782,15 @@ footer{
 @media(width:375px) and (height:667px){
 
     .head-mobile{
-        height:14vh;
+        height:13.3vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:1vh;
+    }
+
+    header h1{
+        top:3.5vh;
     }
 
     .sobre-info ul{
@@ -789,18 +798,30 @@ footer{
     }
 
     .label{
-        top:-2.5vh;
+        top:-3.5vh;
     }
 }
 
 @media(width:360px) and (height:760px){
 
     .label{
-        top:-2.5vh;
+        top:-3.5vh;
+    }
+
+    .head-mobile{
+        height:12vh;
     }
 
     .sobre-info ul{
         margin-top:8vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:0.5vh;
+    }
+
+    header h1{
+        top:3vh;
     }
 }
 
@@ -822,11 +843,19 @@ footer{
 @media(width: 384px) and (height:854px){
     
     .head-mobile{
-        height:13vh;
+        height:10.6vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:0.5vh;
+    }
+
+    header h1{
+        top:3vh;
     }
 
     .label{
-        top: -2.2vh;
+        top: -3.2vh;
     }
 
     .sobre-info ul{
@@ -849,11 +878,19 @@ footer{
 @media(width:375px) and (height:812px){
 
     .head-mobile{
-        height:13vh;
+        height:11.1vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:0.5vh;
+    }
+
+    header h1{
+        top:3vh;
     }
 
     .label{
-        top:-2.3vh;
+        top:-3.3vh;
     }
 
     .sobre-info ul{
@@ -864,15 +901,23 @@ footer{
 @media(width:390px) and (height:844px){
 
     .head-mobile{
-        height:13vh;
+        height:10.9vh;
     }
 
     .label{
-        top:-2.3vh;
+        top:-3.3vh;
     }
 
     .sobre-info ul{
         margin-top:8vh;
+    }
+
+    header h1{
+        top: 3.1vh;
+    }
+
+    .head-mobile .btn-menu{
+        top:0.5vh;
     }
 }
 

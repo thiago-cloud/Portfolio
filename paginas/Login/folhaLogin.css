@@ -215,6 +215,7 @@ header h1 {
     background-color: #000;
     position: fixed;
     top:-1vh;
+    box-shadow: 1px 3px 40px #3016ec;
 }
 
 .head-mobile .btn-menu {
@@ -227,6 +228,7 @@ header h1 {
     visibility: visible;
     position:relative;
     top:1vh;
+    
 }
 
 .linha{
