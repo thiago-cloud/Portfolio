@@ -650,14 +650,14 @@ footer{
     header h1 {
         color:#2410ce;
         font-size: 1.9rem;
-        left: 21vw;
-        top:4vh;
+        left: 25vw;
+        top:3vh;
         position: absolute;
     }
 
     .head-mobile{
         width: 100vw;
-        height:14vh;
+        height:10vh;
         position: fixed;
         z-index: 999;
         padding: 20px;
@@ -678,7 +678,7 @@ footer{
         background-color:#fff;
         visibility: visible;
         position:relative;
-        top:1.5vh;
+        top:0.3vh;
         
     }
 
@@ -725,6 +725,10 @@ footer{
         z-index: 999;
     }
 
+    .titulo-footer{
+        margin-bottom:7vh;
+    }
+
     /*Tema claro Escuro Mobile*/
 
     .claroEscuro{
@@ -741,8 +745,8 @@ footer{
         border-radius: 50px;
         cursor:pointer;
         position: relative;
-        left:277px;
-        top: 2.5vh;
+        left:325px;
+        top: -3.5vh;
         height: 17px;
         width:40px;
         transform: scale(1.5);
@@ -1074,3 +1078,6 @@ footer{
     }
 
 }
+
+/*Responsividade Tablet*/
+
