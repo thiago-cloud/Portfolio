@@ -666,6 +666,7 @@ footer{
         position: fixed;
         top:0;
         box-shadow: 1px 3px 40px #3016ec;
+        opacity: 0.9;
     }
     
 
@@ -732,6 +733,10 @@ footer{
 
     /*Tema claro Escuro Mobile*/
 
+    .checkbox-mobile{
+        display:none;
+    }
+
     .claroEscuro{
         display: inline;
     }
@@ -781,4 +786,290 @@ footer{
         font-size: 10px;
     }
 }
+
+@media(width:360px) and (height:760px){
+    
+    header h1{
+        top:1.8vh;
+        left:22vw;
+    }
+
+    .label{
+        top: 4vh;
+    }
+}
+
+@media(width:360px) and (height:800px){
+
+    header h1{
+        top:2vh;
+        left:20vw;
+    }
+
+    .label{
+        top:4vh;
+    }
+}
+
+@media(width:360px) and (height:640px){
+
+    header h1{
+        left: 20vw;
+        top: 1vh;
+    }
+
+    .label{
+        top:3.5vh;
+    }
+}
+
+@media(width:320px) and (height:568px){
+
+    header h1{
+        left: 16vw;
+        top: 0.5vh;
+    }
+
+    .head-mobile .btn-menu{
+        height:7vh;
+        top: 1.5vh;
+    }
+
+    .label{
+        top:3.5vh;
+    }
+}
+
+@media(width:375px) and (height:667px){
+
+    header h1{
+        left:20vw;
+        top:1.5vh;
+    }
+
+    .label{
+        top: 3.7vh;
+    }
+}
+
+@media(width:384px) and (height:640px){
+
+    header h1{
+        top:1.5vh;
+        left:22vw;
+    }
+
+    .label{
+        top:3.8vh;
+    }
+}
+
+/*Responsividade Tablet*/
+
+@media(min-width:540px) and (min-height:300px){
+    
+    header{
+        padding:0;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .section-div{
+        grid-template-columns: 1fr;
+        background-image: url('img/dev.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        position: relative;
+        top: -2vh;
+    }
+
+    .section-div div a {
+        color: #fff;
+        border: 2px solid #3016ec;
+        background-color: #3016ec;
+    }
+
+    .section-div p{
+        color:#000;
+    }
+
+    .section-div div h2{
+        color:#000;
+    }
+
+    main .sobre{
+        grid-template-columns: 1fr;
+    }
+
+    .image2{
+        height: 50vh;
+        width: 95vw;
+        background-position: center;
+        
+    }
+
+    .image{
+        visibility: hidden;
+    }
+
+    .sobre-info i{
+        font-size: 2.5rem;
+    }
+
+    .head-mobile{
+        width: 100vw;
+        height:10vh;
+        position: fixed;
+        z-index: 999;
+        padding: 20px;
+        display: block;
+        background-color: #000;
+        position: fixed;
+        top:0;
+        box-shadow: 1px 3px 40px #3016ec;
+        opacity: 0.9;
+    }
+    
+    .head-mobile .btn-menu {
+        width:9vw;
+        height:4vh;
+        border: none;
+        cursor:pointer;
+        border-radius: 5px;
+        background-color:#000;
+        visibility: visible;
+        position: absolute;
+        top: 2.8vh;
+        left: 5vw;
+    }
+
+    .menu-mobile a {
+        color: azure;
+        text-decoration: none;
+        display: block;
+        padding: 30px 40px;
+        font-size: 25pt;
+      }
+
+    header h1{
+        position:absolute;
+        left:35vw;
+        top:2.3vh;
+    }
+
+    .linha{
+        width:80%;
+        height:5px;
+        background-color: #ccc;
+        display: block;
+        position:relative;
+        margin:5px auto;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .btn-menu.ativar{
+        border:none;
+    }
+
+    button.ativar .linha:nth-child(1){
+        transform: translateY(10px) rotate(-45deg);
+        background-color: red;
+    }
+
+    button.ativar .linha:nth-child(2){
+        width: 0;
+    }
+    
+    button.ativar .linha:nth-child(3){
+        transform: translateY(-10px) rotate(45deg);
+        background-color: red;
+    }
+
+    .menu-mobile.abrir{
+        visibility: visible;
+        height: calc(250vh - 10vh);
+        position: fixed;
+        z-index: 999;
+    }
+
+    .menu-mobile.esconder{
+        visibility: hidden;
+        height: calc(250vh - 10vh);
+        position: fixed;
+        z-index: 999;
+    }
+
+    .titulo-footer{
+        margin-bottom:7vh;
+    }
+
+    /*Tema claro Escuro Mobile*/
+
+    .checkbox-mobile{
+        display:none;
+    }
+
+    .claroEscuro{
+        display: inline;
+    }
+    
+    .checkbox-mobile {
+        opacity:0; /*esconde o checkbox deixando totalmente transparente*/
+        position:absolute;
+    }
+    
+    .label{
+        background-color:#232c35;
+        border-radius: 50px;
+        cursor:pointer;
+        position: absolute;
+        left:90vw;
+        top: 4.5vh;
+        height: 17px;
+        width:40px;
+        transform: scale(2);
+    }
+    
+    .label .ball{
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top:2px;
+        left:2px;
+        height: 13px;
+        width:13px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+    
+    .checkbox-mobile:checked + .label .ball{
+        transform:translateX(21px)
+    }
+    
+    .fa-moon{
+        margin-left: 5px;
+        color:#f1c40f;
+        font-size: 10px;
+    }
+    
+    .fa-sun{
+        margin-right: 5px;
+        color:#f39c12;
+        font-size: 10px;
+    }
+    
+    .head-mobile .btn-menu{
+        visibility: visible;
+    }
+
+    .titulo-mobile {
+        display: block;
+      }
+}
+
 
