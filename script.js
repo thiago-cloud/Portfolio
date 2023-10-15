@@ -21,14 +21,14 @@ const clickFora = document.getElementById('menu-mobile')
 
 function animar(){
     btn.classList.toggle('ativar')
-    menuMobile.style.cssText = `visibility:visible`
+    /*menuMobile.style.cssText = `visibility:visible`*/
 }
 
-clickFora.addEventListener("click", function(){
+/*clickFora.addEventListener("click", function(){
     menuMobile.style.cssText = ` visibility:hidden;  `
-    /*menuMobile.classList.add('esconder')*/
+    menuMobile.classList.add('esconder')
     btn.classList.toggle('ativar')
-})
+})*/
 
 btn.addEventListener('click',function(){
     menuMobile.classList.toggle('abrir')
