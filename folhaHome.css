@@ -227,12 +227,12 @@ header .navegacao-primaria li a:hover::after{
     border-radius: 50px;
     cursor:pointer;
     top: 94px;
-    left:2.5vw;
+    left:3.5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position:absolute;
-    height: 17px;
+    height: 18px;
     width:39px;
     transform: scale(1.5);
 }
@@ -241,10 +241,12 @@ header .navegacao-primaria li a:hover::after{
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    top:2px;
+    /*top:2px;*/
     left:2px;
-    height: 13px;
-    width:13px;
+    /*height: 13px;*/
+    /*width:13px;*/
+    height: 14px;
+    width:14px;
     transform: translateX(0px);
     transition: transform 0.2s linear;
 }
@@ -254,13 +256,15 @@ header .navegacao-primaria li a:hover::after{
 }
 
 .fa-moon{
-    margin-left: 5px;
+    /*margin-left: 5px;*/
+    margin-left: 2.6px;
     color:#f1c40f;
     font-size: 10px;
 }
 
 .fa-sun{
-    margin-right: 5px;
+    /*margin-right: 5px;*/
+    margin-right: 2.6px;
     color:#f39c12;
     font-size: 10px;
 }
