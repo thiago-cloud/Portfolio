@@ -1,5 +1,7 @@
 # Site de Portfólio
 
+Status: Desenvolvedor ⚠️
+
 Bem-vindo ao meu site de portfólio! Atualmente, o site está em construção e está passando por melhorias para melhor apresentar minhas habilidades e projetos. Em breve, você verá novas funcionalidades e uma experiência ainda mais completa.
 
 ## Tecnologias Utilizadas
